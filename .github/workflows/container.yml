@@ -27,6 +27,7 @@ jobs:
 
       - uses: shinyinc/action-aws-cli@v1.2
       - run: aws s3 sync dist s3://git-frontend-dashboard/container/latest
+      - run: aws configure list
         env:
           AWS_ACCESS_KEY_ID: AKIAS6COCYZHUNQAZFMR
           AWS_SECRET_ACCESS_KEY: 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
